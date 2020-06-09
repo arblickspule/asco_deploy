@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<body>
+  <vue>
+    <h1>This is a test</h1>
+    <p>it will eventually be dynamically loaded in to Vue</p>
+    <p>Just testing some stuff.</p>
+    <pre><code>
+      if (process.env.MODE !== 'ssr') {
+        routes.push({
+          path: '*',
+          component: () => import('pages/Error404.vue')
+        })
+      }
+    </code></pre>
+  </vue>
+</body>
