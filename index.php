@@ -10,7 +10,7 @@ function _bot_detected() {
 if (!_bot_detected()) {
     echo readFile("index.html");
 } else {
-    echo readFile("index_bot.html")
-    // print "Hello Bot, I'll give you some sugar soon. ;)";
+    // echo readFile("index_bot.html")
+    print "Hello Bot, I'll give you some sugar soon. ;)";
 }
 ?>
