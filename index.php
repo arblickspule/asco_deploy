@@ -10,7 +10,7 @@ function _bot_detected() {
 function _app_detected() {
 
   return (
-    isset($_SERVER['header1'])
+    isset($_SERVER['HTTP_HEADER1'])
   );
 }
 
